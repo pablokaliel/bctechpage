@@ -9,6 +9,7 @@ export const DivQuaternary = styled.div`
   background: #0a1619;
 
   margin-top: 138px;
+
   gap: 63px;
   padding: 80px 0px;
 
@@ -28,13 +29,17 @@ export const DivQuaternary = styled.div`
     display: flex;
     justify-content: center;
   }
+
+  @media (max-width: 770px) {
+    margin-top: 600px;
+  }
 `;
 
 export const DivEnd = styled.div`
   display: flex;
   justify-content: space-between;
 
-  height: 225.557px;
+  height: 225px;
 
   margin-left: 135px;
   padding: 24px;
@@ -46,6 +51,10 @@ export const DivEnd = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  @media (max-width: 770px) {
+    margin-left: 0;
+  }
 `;
 
 export const DivStart = styled.div`
@@ -56,7 +65,7 @@ export const DivStart = styled.div`
   padding: 24px;
   margin-right: 135px;
 
-  height: 225.557px;
+  height: 225px;
 
   border-radius: 0px 295px 295px 0px;
   background: rgba(0, 221, 156, 0.05);
@@ -65,6 +74,11 @@ export const DivStart = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  @media (max-width: 770px) {
+    margin-right: 0;
+    height: initial;
+  }
 `;
 
 export const DivJourney = styled.div`
@@ -85,7 +99,7 @@ export const BtnLetsMore = styled.button`
   gap: 8px;
 
   border-radius: 5px;
-  border: 1px solid var(--01, #00e3a5);
+  border: 1px solid #00e3a5;
 
   background: transparent;
   color: #fff;
@@ -112,6 +126,10 @@ export const DivText = styled.div`
 
     -webkit-text-stroke: 0.8px #1f4439;
     -webkit-text-fill-color: transparent;
+
+    @media (max-width: 770px) {
+      font-size: 32px;
+    }
   }
 `;
 
@@ -123,13 +141,26 @@ export const Text = styled.div`
     font-style: normal;
     font-weight: 700;
     line-height: 32px;
+
+    @media (max-width: 770px) {
+      font-size: 18px;
+    }
   }
+
   span {
     color: #80ab9e;
+
+    @media (max-width: 770px) {
+      font-size: 12px;
+    }
 
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 32px;
+  }
+
+  @media (max-width: 770px) {
+    max-width: 100%;
   }
 `;

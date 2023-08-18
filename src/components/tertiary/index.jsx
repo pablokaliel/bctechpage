@@ -1,4 +1,15 @@
-import { DivTertiary, Logos, DivAboutUs, TextAbout, BtnLearnMore, DivImagesSecurity, MarketPlace, DataProtection, MoneyProtection, FastSecure } from "./styles";
+import {
+  DivTertiary,
+  Logos,
+  DivAboutUs,
+  TextAbout,
+  BtnLearnMore,
+  DivImagesSecurity,
+  MarketPlace,
+  DataProtection,
+  MoneyProtection,
+  FastSecure,
+} from "./styles";
 
 import protection from "../../assets/protection.svg";
 import marketplace from "../../assets/marketplace.svg";

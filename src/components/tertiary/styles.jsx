@@ -11,15 +11,29 @@ export const Logos = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  width: 1447.085px;
+  width: 1447px;
 
   padding: 70px;
   margin: 0 auto;
 
-  border-radius: 129.482px;
+  border-radius: 129px;
   background: #091d18;
 
   opacity: 0.5;
+
+  @media (max-width: 770px) {
+    width: 100%;
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    img {
+      width: 140px;
+      height: 50px;
+    }
+
+    padding: 24px;
+    gap: 10px;
+  }
 `;
 
 export const DivAboutUs = styled.div`
@@ -38,13 +52,27 @@ export const DivAboutUs = styled.div`
   background-image: url(${backgroundfuturistic});
   background-size: cover;
   background-repeat: no-repeat;
+
+  @media (max-width: 770px) {
+    width: 100%;
+    flex-direction: column;
+
+    padding: 15px;
+    margin-right: 0;
+
+    border-radius: 0;
+  }
 `;
 
 export const TextAbout = styled.div`
   display: flex;
   flex-direction: column;
 
-  width: 493.072px;
+  width: 493px;
+
+  @media (max-width: 770px) {
+    width: 100%;
+  }
 
   gap: 8px;
 
@@ -53,7 +81,7 @@ export const TextAbout = styled.div`
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 32px; /* 160% */
+  line-height: 32px;
 
   h1 {
     color: #f5fbf2;
@@ -76,7 +104,7 @@ export const BtnLearnMore = styled.button`
   margin-top: 82px;
 
   border-radius: 5px;
-  border: 1px solid var(--01, #00e3a5);
+  border: 1px solid #00e3a5;
   background-color: transparent;
   color: #fff;
 
@@ -92,10 +120,14 @@ export const DivImagesSecurity = styled.div`
   display: flex;
   position: relative;
 
-  width: 100%;
 
-  flex: 1;
-  gap: 23px;
+width: 771px;
+height: 620px;
+
+gap: 23px;
+@media (max-width: 770px) {
+width:100%;
+}
 `;
 
 export const MarketPlace = styled.div`
@@ -106,6 +138,18 @@ export const MarketPlace = styled.div`
 
   width: 317px;
   height: 229px;
+
+  @media (max-width: 770px) {
+    width: 150px;
+    height: 160px;
+
+    left: 30px;
+
+    img {
+      width: 35px;
+      height: 35px;
+    }
+  }
 
   position: relative;
 
@@ -123,7 +167,7 @@ export const MarketPlace = styled.div`
 
   position: absolute;
   top: 0;
-  left: 0;
+  right: 315px;
 
   span {
     color: #bdf3ff;
@@ -131,11 +175,20 @@ export const MarketPlace = styled.div`
     font-size: 22px;
     font-weight: 500;
     line-height: 33px;
+
+    @media (max-width: 770px) {
+      font-size: 14px;
+    }
   }
 
   div {
     width: 97px;
     height: 97px;
+
+    @media (max-width: 770px) {
+      width: 35px;
+      height: 35px;
+    }
 
     background: #ffb413;
     filter: blur(30px);
@@ -155,6 +208,18 @@ export const DataProtection = styled.div`
   width: 317px;
   height: 229px;
 
+  @media (max-width: 770px) {
+    width: 150px;
+    height: 160px;
+
+    top: 181px;
+    right: 170px;
+
+    img {
+      width: 35px;
+      height: 35px;
+    }
+  }
   gap: 23px;
 
   border-radius: 15px;
@@ -178,11 +243,20 @@ export const DataProtection = styled.div`
     font-size: 22px;
     font-weight: 500;
     line-height: 33px;
+
+    @media (max-width: 770px) {
+      font-size: 14px;
+    }
   }
 
   div {
     width: 97px;
     height: 97px;
+
+    @media (max-width: 770px) {
+      width: 35px;
+      height: 35px;
+    }
 
     background: #2fb8eb;
     filter: blur(30px);
@@ -202,6 +276,17 @@ export const MoneyProtection = styled.div`
   width: 317px;
   height: 229px;
 
+  @media (max-width: 770px) {
+    width: 150px;
+    height: 160px;
+    top: 85px;
+    right: 70px;
+
+    img {
+      width: 35px;
+      height: 35px;
+    }
+  }
   gap: 23px;
 
   border-radius: 15px;
@@ -223,11 +308,19 @@ export const MoneyProtection = styled.div`
 
     font-size: 22px;
     font-weight: 500;
+    @media (max-width: 770px) {
+      font-size: 14px;
+    }
     line-height: 33px;
   }
   div {
     width: 97px;
     height: 97px;
+
+    @media (max-width: 770px) {
+      width: 35px;
+      height: 35px;
+    }
 
     background: #ff5a13;
     filter: blur(30px);
@@ -256,7 +349,7 @@ export const FastSecure = styled.div`
 
   position: absolute;
   right: -130px;
-  bottom: -160px;
+  top:350px;
 
   border-radius: 15px;
   background: linear-gradient(
@@ -270,6 +363,10 @@ export const FastSecure = styled.div`
     font-weight: 500;
     line-height: 33px;
     color: #bdf3ff;
+
+    @media (max-width: 770px) {
+      font-size: 14px;
+    }
   }
 
   div {
@@ -282,5 +379,23 @@ export const FastSecure = styled.div`
     position: absolute;
     top: 0;
     right: 50px;
+
+    @media (max-width: 770px) {
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  @media (max-width: 770px) {
+    width: 150px;
+    height: 160px;
+
+    right: 4px;
+    bottom: -421px;
+
+    img {
+      width: 35px;
+      height: 35px;
+    }
   }
 `;

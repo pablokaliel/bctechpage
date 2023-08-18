@@ -1,13 +1,13 @@
-import { DivQuintenary, DivCommunity, DivImageUser, Comment } from "./styles";
+import { DivQuinary, DivCommunity, DivImageUser, Comment } from "./styles";
 
 import asp from "../../assets/asp.svg";
 import user from "../../assets/user.png";
 import arrowright from "../../assets/arrowright.svg";
 import arrowleft from "../../assets/arrowleft.svg";
 
-function ContainerQuintenary() {
+function ContainerQuinary() {
   return (
-    <DivQuintenary>
+    <DivQuinary>
       <h1>Our community with User Reviews</h1>
 
       <DivCommunity>
@@ -35,8 +35,8 @@ function ContainerQuintenary() {
           <p>-Dake M. Chile, Business Owner of Bellie</p>
         </Comment>
       </DivCommunity>
-    </DivQuintenary>
+    </DivQuinary>
   );
 }
 
-export default ContainerQuintenary;
+export default ContainerQuinary;

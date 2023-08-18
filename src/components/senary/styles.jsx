@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 import backgroundfooter from "./../../assets/backgroundfootertwo.png";
 
-export const DivSexternary = styled.footer`
+export const DivSenary = styled.footer`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,6 +15,11 @@ export const DivSexternary = styled.footer`
   padding: 124px 0px;
 
   background-color: rgba(9, 35, 38, 0.4);
+
+  @media (max-width: 770px) {
+    padding: 15px;
+    flex-direction: column;
+  }
 `;
 
 export const DivSocialMedia = styled.div`
@@ -23,11 +28,58 @@ export const DivSocialMedia = styled.div`
 
   gap: 32px;
   margin-right: 244px;
+
+  @media (max-width: 770px) {
+    margin-right: 0;
+    margin-bottom: 32px;
+
+    text-align: center;
+  }
 `;
 
-export const DivSocial = styled.div`
-  display: flex;
+export const DivSocialDesktop = styled.div`
   gap: 24px;
+  display: flex;
+  flex-direction: column;
+
+  div {
+    display: flex;
+    gap: 25px;
+  }
+
+  @media (max-width: 770px) {
+    justify-content: center;
+  }
+
+  @media (max-width: 770px) {
+    display: none;
+  }
+`;
+
+export const DivSocialMobile = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 24px;
+
+  div {
+    display: flex;
+    gap: 25px;
+  }
+
+  @media (max-width: 770px) {
+    justify-content: center;
+
+    h1 {
+      font-size: 20px;
+    }
+  }
+
+  @media (min-width: 770px) {
+    display: none;
+  }
 `;
 
 export const DivBcTech = styled.div`
@@ -35,30 +87,42 @@ export const DivBcTech = styled.div`
   flex-direction: column;
 
   gap: 32px;
-  width: 416.271px;
+  width: 416px;
 
   h1 {
     font-size: 34px;
     font-style: normal;
     font-weight: 400;
-    line-height: 36.4px;
+    line-height: 36px;
 
+    @media (max-width: 770px) {
+      font-size: 20px;
+    }
     span {
       color: #00e3a5;
     }
   }
 
   span {
-    color: var(--04, #80ab9e);
+    color: #80ab9e;
+
+    @media (max-width: 770px) {
+      font-size: 14px;
+    }
 
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 32px;
   }
+
+  @media (max-width: 770px) {
+    width: 100%;
+    text-align: center;
+  }
 `;
 
-export const Social = styled.a`
+export const SocialMobile = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -83,6 +147,62 @@ export const Social = styled.a`
       color: #00e3a5;
     }
   }
+
+  @media (min-width: 770px) {
+    display: none;
+  }
+
+  @media (max-width: 770px) {
+    width: 32px;
+    height: 32px;
+  }
+`;
+
+export const SocialDesktop = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 48px;
+  height: 48px;
+
+  border-radius: 100%;
+  border: 2px solid #80ab9e;
+
+  transition: all 0.3s;
+
+  svg {
+    color: #80ab9e;
+  }
+
+  &:hover {
+    border: 2px solid #00e3a5;
+    scale: 1.1;
+
+    svg {
+      color: #00e3a5;
+    }
+  }
+
+  @media (max-width: 770px) {
+    display: none;
+  }
+`;
+
+export const LicenseDesktop = styled.p`
+  @media (max-width: 770px) {
+    display: none;
+  }
+`;
+export const LicenseMobile = styled.p`
+  @media (max-width: 770px) {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: 770px) {
+    display: none;
+  }
 `;
 
 export const DivSlatter = styled.div`
@@ -91,6 +211,10 @@ export const DivSlatter = styled.div`
 
   margin-left: 84px;
   gap: 70px;
+
+  @media (max-width: 770px) {
+    margin-left: 0px;
+  }
 `;
 
 export const DivNewSlatter = styled.div`
@@ -104,6 +228,9 @@ export const DivNewSlatter = styled.div`
     font-style: normal;
     font-weight: 700;
     line-height: 150%;
+    @media (max-width: 770px) {
+      font-size: 24px;
+    }
   }
 `;
 
@@ -112,11 +239,14 @@ export const DivInput = styled.div`
 
   input {
     width: 469px;
+    @media (max-width: 770px) {
+      width: 100%;
+    }
 
     padding: 24px;
 
     border-radius: 5px 0px 0px 5px;
-    border: 1px solid var(--01, #ffffff);
+    border: 1px solid #ffffff;
     background: transparent;
 
     color: #00e3a5;
@@ -129,7 +259,7 @@ export const DivInput = styled.div`
     transition: all 0.3s;
 
     &:focus {
-      border: 1px solid var(--01, #00e3a5);
+      border: 1px solid #00e3a5;
       outline: none;
     }
   }
@@ -146,7 +276,7 @@ export const DivInput = styled.div`
 
     border-radius: 0px 5px 5px 0px;
     border: none;
-    background: var(--01, #00e3a5);
+    background: #00e3a5;
 
     transition: all 0.3s;
 
@@ -154,6 +284,13 @@ export const DivInput = styled.div`
       background: #03b485;
       color: #fff;
     }
+    @media (max-width: 770px) {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 770px) {
+    width: 100%;
   }
 `;
 
@@ -169,11 +306,15 @@ export const DivOptions = styled.div`
     font-style: normal;
     font-weight: 400;
     line-height: 50.5px;
-    
-    color: var(--04, #80ab9e);
+
+    color: #80ab9e;
     text-decoration: none;
 
     transition: all 0.3s;
+
+    @media (max-width: 770px) {
+      font-size: 16px;
+    }
 
     &:hover {
       color: #f5fbf2;
@@ -183,6 +324,11 @@ export const DivOptions = styled.div`
       font-weight: bold;
     }
   }
+
+  @media (max-width: 770px) {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
 `;
 
 export const Divider = styled.div`
@@ -190,6 +336,10 @@ export const Divider = styled.div`
   height: 650px;
 
   background: rgba(255, 255, 255, 0.32);
+
+  @media (max-width: 770px) {
+    display: none;
+  }
 `;
 
 export const DividerSlatter = styled.div`

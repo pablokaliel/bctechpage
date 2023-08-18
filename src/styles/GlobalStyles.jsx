@@ -9,15 +9,14 @@ export default createGlobalStyle`
 
   body{
     width:100%;
-    height:100%;
-
+    min-height: 100vh;
   }
 
   #root,
   html,
   body {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     font-family: Roboto;
     background:#0D0D0D;
     color:#F5FBF2;

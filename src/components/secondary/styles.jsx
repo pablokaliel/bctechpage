@@ -7,6 +7,16 @@ export const DivSecondary = styled.div`
   align-items: center;
 
   margin-top: 128px;
+
+  @media (max-width: 770px) {
+    margin-top: 70px;
+    padding: 15px;
+
+    img {
+      width: 100%;
+      height: 245px;
+    }
+  }
 `;
 
 export const DivCurrency = styled.div`
@@ -24,10 +34,11 @@ export const DivCurrency = styled.div`
 
   h1 {
     color: #f5fbf2;
+
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
-    line-height: 150%; /* 54px */
+    line-height: 150%;
   }
 `;
 
@@ -36,19 +47,20 @@ export const DivInfoCurrency = styled.div`
   justify-content: space-between;
 
   margin-top: 48px;
+  gap: 45px;
 `;
 
 export const InfoCurrency = styled.div`
   h1 {
-    color: var(--01, #00e3a5);
-  
+    color: #00e3a5;
+
     text-align: center;
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
-    line-height: 150%; /* 54px */
+    line-height: 150%;
   }
-  
+
   span {
     color: #9e9e9e;
 

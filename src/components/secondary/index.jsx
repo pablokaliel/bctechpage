@@ -17,13 +17,13 @@ function ContainerSecondary() {
         </InfoCurrency>
 
         <InfoCurrency>
-          <h1>1M+</h1>
-          <span>Happy Users</span>
+          <h1>200K+</h1>
+          <span>Community Assets</span>
         </InfoCurrency>
 
         <InfoCurrency>
-          <h1>1M+</h1>
-          <span>Happy Users</span>
+          <h1>20K+</h1>
+          <span>Build Community</span>
         </InfoCurrency>
       </DivInfoCurrency>
 
